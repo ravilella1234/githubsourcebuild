@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.project.MavenProject.listners.Listener"/>
+    <listener class-name="com.project.MavenProject.listners.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.project.MavenProject.TC_005">
+        <methods>
+          <include name="amazon"/>
+          <include name="startProcess"/>
+          <include name="endProcess"/>
+        </methods>
+      </class> <!-- com.project.MavenProject.TC_005 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
